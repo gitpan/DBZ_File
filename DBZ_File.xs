@@ -14,7 +14,6 @@ dbz_TIEHASH(dbtype, filename, flags = 0, mode = 0)
 	int		flags
 	int		mode
 	CODE:
-	dbzdebug(1);
 	if (dbzdbminit(filename) == 0
 	 || (flags && mode && errno == ENOENT
 	  && dbzfresh(filename, 0, '\t', '?', 0) == 0))

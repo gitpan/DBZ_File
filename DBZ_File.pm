@@ -12,7 +12,7 @@ require DynaLoader;
 
 @ISA = qw(DynaLoader);
 
-$VERSION = '1.0';
+$VERSION = '1.1';
 
 bootstrap DBZ_File $VERSION;
 
